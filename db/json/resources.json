@@ -1,0 +1,3 @@
+{ "id" : "a", "title" : "Бокс №1", "description" : "Развал схождение, вибростенд", "createDate" : "2016-07-15T06:17:07", "_id" : { "$oid" : "57887fe3e6e9631c7d13bfe5" } }
+{ "id" : "b", "title" : "Бокс №2", "description" : "Неизвестно", "eventColor" : "green", "createDate" : "2016-07-15T06:17:07", "_id" : { "$oid" : "57887fe3e6e9631c7d13bfe6" } }
+{ "_id" : { "$oid" : "578bb352f1d0e958cbd9e286" }, "id" : "d", "title" : "ТестБокс", "description" : "Это тестовый бокс, здесь пиздят солидольных крыс!", "eventColor" : "red", "createDate" : "2016-07-17T16:33:22", "children" : [ { "id" : "d2", "title" : "ТестПост", "description" : "Это тестовый пост, для каждой солидольной крысе своя норка!", "createDate" : "2016-07-18T13:41:15" } ] }

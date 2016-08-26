@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='css/signin.css'/>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/backbone/backbone.js"></script>
+    <script src="js/this/login.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row>">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <form class="form-signin" action="/register" method="post">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Вход</h3>
+                    </div>
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="text" id="inputEmail" class="form-control" placeholder="Имя пользователя" type="text" name="username" required autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" type="password" name="password" required>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Зарегистрировать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div> <!-- /container -->
+</body>
+</html>

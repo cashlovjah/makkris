@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" href="bower_components/backgrid/lib/backgrid.css">
+    <link rel="stylesheet" href="bower_components/fullcalendar-scheduler/dist/scheduler.min.css">
+    <link rel="stylesheet" href="bower_components/backbone-paginator/backgrid-paginator.css">
+    <link rel="stylesheet" href="bower_components/backgrid-select-all/backgrid-select-all.min.css">
+    <link rel="stylesheet" href="bower_components/backgrid-filter/backgrid-filter.css">
+    <link rel="stylesheet" href="bower_components/bmodal/bmodal.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Автосервис</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Администрирование<span
+                                class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="themes">
+                        <li><a class="user-control" href="#users">Пользователи</a></li>
+                        <li class="divider"></li>
+                        <li><a class="boxes-control" href="#boxes">Ремонтные боксы</a></li>
+                        <li><a class="posts-control" href="#posts">Ремонтные посты</a></li>
+                        <li><a class="typeOfWork-control" href="#typOfWork">Типы работ</a></li>
+                        <li class="divider"></li>
+                        <li><a class="customer-control" href="#customers">Клиенты</a></li>
+                        <li class="divider"></li>
+                        <li><a class="log-control" href="#log">Журнал</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Заявки<span
+                                class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="themes">
+                        <li><a class="add-event" href="#addEvent">Добавить</a></li>
+                        <li class="divider"></li>
+                        <li><a class="update-event" href="#updateEvent">Редактировать</a></li>
+                        <li><a class="delete-event" href="#deleteEvent">Удалить</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="delete-event" href="#help">Помощь</a>
+                </li>
+                <li>
+                    <a class="logout" href="/logout">Выход</a>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="navbar-brand">Вы вошли как <%= user.username %></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid main-container">
+    <div id="mainframe">
+        <div id="calendar"></div>
+    </div>
+
+</div>
+
+<div class="mw"></div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="bower_components/fullcalendar-scheduler/dist/scheduler.min.js"></script>
+<script src="bower_components/backgrid/lib/backgrid.js"></script>
+<script src="bower_components/backbone.paginator/lib/backbone.paginator.min.js"></script>
+<script src="bower_components/backbone-paginator/backgrid-paginator.min.js"></script>
+<script src="bower_components/backgrid-select-all/backgrid-select-all.js"></script>
+<script src="bower_components/backgrid-filter/backgrid-filter.min.js"></script>
+<script src="bower_components/backbone-forms/distribution/backbone-forms.min.js"></script>
+<script src="bower_components/backbone-forms/distribution/templates/bootstrap3.js"></script>
+<script src="bower_components/bmodal/bmodal.js"></script>
+<script src="js/this/calendar.js"></script>
+<script src="js/models/user.js"></script>
+<script src="js/models/box.js"></script>
+<script src="js/collections/box.js"></script>
+<script src="js/libs/mainframe.js"></script>
+<script src="js/this/menu.js"></script>
+<script src="js/pages/user.js"></script>
+<script src="js/pages/box.js"></script>
+
+</body>
+</html>

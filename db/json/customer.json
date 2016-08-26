@@ -1,0 +1,1 @@
+{ "_id" : { "$oid" : "578dea48f120514f535bec10" }, "name" : "Петров Денис Васильевич", "phone" : "89674325656", "vin" : "UI78GT53DFRT56479", "DriverLicenseNumber" : "з324ку96", "Mileage" : "100002", "createOwner" : { "$oid" : "5788786c9023171f18b9a486" }, "createDate" : "2016-07-19T08:52:24" }
