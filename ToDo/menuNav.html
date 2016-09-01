@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
     <link rel="stylesheet" href="bower_components/fullcalendar-scheduler/dist/scheduler.min.css">
-    <link rel="stylesheet" href="js/libs/bootstrap-modalWindow/bootstrap-modelWindow.css">
+    <link rel="stylesheet" href="../public/js/libs/bootstrap-modalWindow/bootstrap-modelWindow.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
             <a href="../" class="navbar-brand">Автосервис</a>
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -25,13 +25,22 @@
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Администрирование<span
-                                class="caret"></span></a>
-                    <ul id="administrationMenu" class="dropdown-menu" aria-labelledby="themes">
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="themes">
+                        <li><a class="user-control" href="#users">Пользователи</a></li>
+                        <li class="divider"></li>
+                        <li><a class="boxes-control" href="#boxes">Ремонтные боксы</a></li>
+                        <li><a class="posts-control" href="#posts">Ремонтные посты</a></li>
+                        <li><a class="typeOfWork-control" href="#typOfWork">Типы работ</a></li>
+                        <li class="divider"></li>
+                        <li><a class="customer-control" href="#customers">Клиенты</a></li>
+                        <li class="divider"></li>
+                        <li><a class="log-control" href="#log">Журнал</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Заявки<span
-                                class="caret"></span></a>
+                            class="caret"></span></a>
                     <ul class="dropdown-menu" aria-labelledby="themes">
                         <li><a class="add-event" href="#addEvent">Добавить</a></li>
                         <li class="divider"></li>
@@ -45,6 +54,7 @@
                 <li>
                     <a class="logout" href="/logout">Выход</a>
                 </li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -61,37 +71,23 @@
     </div>
 
 </div>
-<!--Меню администрирования-->
-<script type="text/template" id="menu-administration">
-
-    <a class="{{ classItem }}" href="#{{ hrefItem }}">{{ nameItem }}</a>
-</script>
 
 <div class="windowModal"></div>
-
-
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/underscore/underscore-min.js"></script>
 <script src="bower_components/backbone/backbone-min.js"></script>
+
 <script src="bower_components/moment/moment.js"></script>
 <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="bower_components/fullcalendar-scheduler/dist/scheduler.min.js"></script>
-<script src="bower_components/backbone-forms/distribution/backbone-forms.js"></script>
-<script src="bower_components/backbone-forms/distribution/templates/bootstrap3.js"></script>
-<!--Подключение модального окна-->
-<script src="js/libs/bootstrap-modalWindow/bootstrap-modalWindow.js"></script>
-<!--Подключение меню "Администрирование"-->
-<script src="js/ui/init.js"></script>
-<script src="js/ui/menu/administration/model/menu.js"></script>
-<script src="js/ui/menu/administration/collections/menu.js"></script>
-<script src="js/ui/menu/administration/view/item.js"></script>
-<script src="js/ui/menu/administration/view/items.js"></script>
-<script src="js/ui/forms/administration/model/user-edit.js"></script>
-<script src="js/ui/forms/administration/view/user-edit.js"></script>
-<script src="js/ui/menu/administration/index.js"></script>
+<script src="../public/js/libs/bootstrap-modalWindow/bootstrap-modalWindow.js"></script>
+
+
 <script src="js/this/calendar.js"></script>
+
 
 
 </body>

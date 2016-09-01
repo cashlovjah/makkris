@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
 var register = require('./routes/register');
+var menuUI = require('./routes/menuUI');
 var user = require('./routes/user');
 var resources = require('./routes/resources');
 var customer = require('./routes/customer');
@@ -48,6 +49,7 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/menu', menuUI);
 app.use('/user', user);
 app.use('/login', login);
 app.use('/register', register);

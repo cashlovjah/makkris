@@ -1,0 +1,22 @@
+[
+  {
+    "_id":"57878b994230774e3167f6e1",
+    "username":"admin",
+    "group":"administrators",
+    "boxId":"ff",
+    "fio":"Администратор",
+    "status":"true",
+    "createOwner":"god",
+    "description":"Администратор",
+    "updateDate":"2016-08-03T20:12:04"},
+  {
+    "_id":"57878b994230774e3167f6e2",
+    "username":"dima",
+    "group":"administrators",
+    "boxId":"ff",
+    "fio":"Зырянов Дмитрий Андреевич",
+    "status":"true",
+    "createOwner":"god",
+    "description":"Администратор",
+    "updateDate":"2016-08-03T20:12:04"}
+]
